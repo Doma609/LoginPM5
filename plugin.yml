@@ -1,0 +1,21 @@
+name: LoginPM5
+main: Doma\LoginPM5\Main
+
+api: 5.0.0
+version: 1.0.0
+website:
+description: LoginUI plugin for pm5
+author: Doma
+
+commands:
+  unregister:
+    description: unregister player
+    permission: login.unreg
+    
+permissions:
+  login.use:
+    default: true
+  login.unreg:
+    default: op
+    description: "Unregister player"
+    
