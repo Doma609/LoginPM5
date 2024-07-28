@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
         $name = $event->getPlayer()->getName();
         $config = new Config($this->getDataFolder(). "players/$name.yml", Config::YAML);
         if($config->exists("password")){
-            $this->registerForm($event->getPlayer());
+            $this->loginForm($event->getPlayer());
         } else {
             $this->registerForm($event->getPlayer());
         }
